@@ -43,11 +43,9 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text='12345555'))
-   line_bot_api.push_message(event.source.user_id, TextSendMessage(text='Hello45rld!'))
+    line_bot_api.push_message(event.source.user_id, TextSendMessage(text='Hello45rld!'))
+   
     
-    
-    
-
 import os
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=os.environ['PORT'])
